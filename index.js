@@ -19,6 +19,7 @@ async function main() {
 
 async function updateGist(stats) {
   let gist;
+  
   try {
     gist = await octokit.gists.get({ gist_id: gistId });
   } catch (error) {
